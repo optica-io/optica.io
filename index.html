@@ -20,8 +20,60 @@
     <meta name="msapplication-TileColor" content="#ffffff">
     <meta name="msapplication-TileImage" content="/ms-icon-144x144.png">
     <meta name="theme-color" content="#ffffff">
+    <style>
+    /* Set height to 100% for body and html to enable the background image to cover the whole page: */
+body, html {
+    height: 100%
+}
+
+.bgimg {
+    background-image: url('./img/bg.jpg');
+    height: 100%;
+    background-position: center;
+    background-size: cover;
+    position: relative;
+    color: white;
+    font-family: "Courier New", Courier, monospace;
+    font-size: 25px;
+}
+
+.topleft {
+    position: absolute;
+    top: 0;
+    left: 16px;
+}
+
+.bottomleft {
+    position: absolute;
+    bottom: 0;
+    left: 16px;
+}
+
+.middle {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    text-align: center;
+}
+
+hr {
+    margin: auto;
+    width: 40%;
+}
+    </style>
   </head>
   <body>
-    Under Development
+    <div class="bgimg">
+  	  <div class="topleft">
+      <img src="./img/optica-w.png" alt="Optica.io">
+      </div>
+      <div class="middle">
+        <h1>Under Development</h1>
+      </div>
+      <div class="bottomleft">
+       <p>An open access platform empowering global provenance transparency</p>
+      </div>
+    </div>
   </body>
 </html>
